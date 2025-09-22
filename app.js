@@ -39,3 +39,6 @@ function sortearAmigo() {
         alert("Agrega al menos el nombre de un(a) amigo(a) antes de sortear.");
         return;
     }
+        // Generar un número entero aleatorio entre 0 y amigos.length - 1, lo que representará el índice de un amigo dentro del array
+        const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+        
