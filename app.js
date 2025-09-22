@@ -41,4 +41,5 @@ function sortearAmigo() {
     }
         // Generar un número entero aleatorio entre 0 y amigos.length - 1, lo que representará el índice de un amigo dentro del array
         const indiceAleatorio = Math.floor(Math.random() * amigos.length);
-        
+        // Tomar el nombre en la posición aleatoria del array amigos, siendo este el "amigo secreto" seleccionado
+        const nombreSorteado = amigos[indiceAleatorio];
