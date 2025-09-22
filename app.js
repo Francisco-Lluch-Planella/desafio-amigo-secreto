@@ -39,13 +39,16 @@ function sortearAmigo() {
         alert("Agrega al menos el nombre de un(a) amigo(a) antes de sortear.");
         return;
     }
-        // Generar un número entero aleatorio entre 0 y amigos.length - 1, lo que representará el índice de un amigo dentro del array
-        const indiceAleatorio = Math.floor(Math.random() * amigos.length);
-        // Tomar el nombre en la posición aleatoria del array amigos, siendo este el "amigo secreto" seleccionado
-        const nombreSorteado = amigos[indiceAleatorio];
-        // Accede al elemento <ul id="resultado"> en el HTML y limpia cualquier mensaje de sorteo anterior para no duplicar resultados
-        const resultadoDOM = document.getElementById('resultado');
-        resultadoDOM.innerHTML = "";
-        // Crea un nuevo <li> y le asigna el texto con el nombre sorteado
-        const itemResultado = document.createElement('li');
-        itemResultado.textContent = `Tu amigo secreto es: ${nombreSorteado}`;
+    // Generar un número entero aleatorio entre 0 y amigos.length - 1, lo que representará el índice de un amigo dentro del array
+    const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+    // Tomar el nombre en la posición aleatoria del array amigos, siendo este el "amigo secreto" seleccionado
+    const nombreSorteado = amigos[indiceAleatorio];
+    // Accede al elemento <ul id="resultado"> en el HTML y limpia cualquier mensaje de sorteo anterior para no duplicar resultados
+    const resultadoDOM = document.getElementById('resultado');
+    resultadoDOM.innerHTML = "";
+    // Crea un nuevo <li> y le asigna el texto con el nombre sorteado
+    const itemResultado = document.createElement('li');
+    itemResultado.textContent = `Tu amigo secreto es: ${nombreSorteado}`;
+    // Inserta ese <li> dentro de la lista visible en la interfaz
+    resultadoDOM.appendChild(itemResultado);
+}
