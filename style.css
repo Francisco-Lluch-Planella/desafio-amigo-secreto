@@ -43,7 +43,7 @@ body {
 .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
-    border: 1px solid #000;
+    border: 10px solid #000;
     border-radius: 64px 64px 64px 64px;
     display: flex;
     flex-direction: column;
