@@ -32,3 +32,10 @@ function actualizarLista() {
         listaDOM.appendChild(li);
     }
 }
+
+// Implementación de la función para sortear al amigo secreto
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert("Agrega al menos el nombre de un(a) amigo(a) antes de sortear.");
+        return;
+    }
