@@ -46,3 +46,5 @@ function sortearAmigo() {
         // Accede al elemento <ul id="resultado"> en el HTML y limpia cualquier mensaje de sorteo anterior para no duplicar resultados
         const resultadoDOM = document.getElementById('resultado');
         resultadoDOM.innerHTML = "";
+        // Crea un nuevo <li> y le asigna el texto con el nombre sorteado
+        const itemResultado = document.createElement('li');
