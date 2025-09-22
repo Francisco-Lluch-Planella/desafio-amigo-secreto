@@ -48,3 +48,4 @@ function sortearAmigo() {
         resultadoDOM.innerHTML = "";
         // Crea un nuevo <li> y le asigna el texto con el nombre sorteado
         const itemResultado = document.createElement('li');
+        itemResultado.textContent = `Tu amigo secreto es: ${nombreSorteado}`;
