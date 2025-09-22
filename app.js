@@ -25,7 +25,7 @@ function actualizarLista() {
     const listaDOM = document.getElementById('listaAmigos');
     // Limpieza de la lista existente
     listaDOM.innerHTML = "";
-    // Iteración sobre el arreglo y agregación de elementos a la lista
+    // Iteración sobre el arreglo y agregación de elemnetos a la lista
     for (let i = 0; i < amigos.length; i++) {
         const li = document.createElement('li');
         li.textContent = amigos[i];
@@ -33,12 +33,13 @@ function actualizarLista() {
     }
 }
 
-// Implementación de la función para sortear al amigo secreto
+// Implementación de la función para sortear al amigo segreto
 function sortearAmigo() {
     if (amigos.length === 0) {
         alert("Agrega al menos el nombre de un(a) amigo(a) antes de sortear.");
         return;
     }
+
     // Generar un número entero aleatorio entre 0 y amigos.length - 1, lo que representará el índice de un amigo dentro del array
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
     // Tomar el nombre en la posición aleatoria del array amigos, siendo este el "amigo secreto" seleccionado
